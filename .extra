@@ -1,9 +1,6 @@
 # PATH additions
 export PATH="~/bin:$PATH"
 
-# Z
- . `brew --prefix`/etc/profile.d/z.sh
-
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
 GIT_AUTHOR_NAME="Cameron Lakenen"
