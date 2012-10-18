@@ -51,6 +51,11 @@ function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
+function mcd()
+{
+  test -e $1 || mkdir $1; cd $1;
+}
+
 # iTerm Tab and Title Customization and prompt customization
 # http://sage.ucsc.edu/xtal/iterm_tab_customization.html
 

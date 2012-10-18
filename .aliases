@@ -20,6 +20,7 @@ alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias md="mkdir"
 
 # Git shortcuts
 alias gco='git co'
