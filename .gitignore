@@ -14,4 +14,4 @@ Thumbs.db
 .Trashes
 
 # Extras (me-specific config)
-.extra
+.bash_local

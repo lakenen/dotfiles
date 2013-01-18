@@ -1,5 +1,5 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+# Add `~/bin`  and npm to the `$PATH`
+export PATH="/usr/local/share/npm/bin:$HOME/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -50,3 +50,6 @@ source ~/.git-completion.sh
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Local modifications
+source ~/.bash_local
