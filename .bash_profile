@@ -52,4 +52,4 @@ source ~/.git-completion.sh
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 # Local modifications
-source ~/.bash_local
+[ -r ~/.bash_local ] && source ~/.bash_local
