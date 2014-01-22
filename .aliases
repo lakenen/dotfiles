@@ -7,10 +7,10 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias w="cd ~/workspace"
 alias cl="clear"
 alias g="git"
 alias h="history"
@@ -137,3 +137,8 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Run a new instance of Chrome Canary in super-secret dev tracing mode
 alias devchrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --enable-threaded-compositing --force-compositing-mode --enable-impl-side-painting --enable-skia-benchmarking --allow-webui-compositing --user-data-dir=/tmp/chrome_tmp"
+
+# Vagrant stuff
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vh="vagrant halt"
