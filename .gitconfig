@@ -34,6 +34,9 @@
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
 
+    # Show unpushed branches/tags
+    unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+
 	b = branch
 
 	# for git completion
