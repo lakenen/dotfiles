@@ -52,6 +52,9 @@
     ci = commit
     rb = rebase
 
+    # save shortcut to ammend commit
+    save = commit -a --amend --no-edit
+
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
