@@ -142,3 +142,7 @@ alias devchrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\
 alias vu="vagrant up"
 alias vs="vagrant ssh"
 alias vh="vagrant halt"
+
+
+# SSH stuff
+alias tunnelvnc="ssh -f -L 5999:127.0.0.1:5900"
