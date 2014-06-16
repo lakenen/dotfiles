@@ -28,6 +28,9 @@ alias gco='git co'
 alias gci='git ci'
 alias grb='git rb'
 
+# git typos
+alias gti='git'
+alias got='git'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
