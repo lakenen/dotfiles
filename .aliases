@@ -7,7 +7,6 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias w="cd ~/workspace"
@@ -44,6 +43,7 @@ alias l="ls -l ${colorflag}"
 
 # List all files colorized in long format, including dot files
 alias la="ls -la ${colorflag}"
+alias ll="la"
 
 # List only directories
 alias lsd='ls -l ${colorflag} | grep "^d"'
@@ -136,7 +136,6 @@ done
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Run a new instance of Chrome Canary in super-secret dev tracing mode
 alias devchrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --enable-threaded-compositing --force-compositing-mode --enable-impl-side-painting --enable-skia-benchmarking --allow-webui-compositing --user-data-dir=/tmp/chrome_tmp"
@@ -145,6 +144,7 @@ alias devchrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\
 alias vu="vagrant up"
 alias vs="vagrant ssh"
 alias vh="vagrant halt"
+alias vr="vh && vs"
 
 
 # SSH stuff

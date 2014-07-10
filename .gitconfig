@@ -52,6 +52,12 @@
     ci = commit
     rb = rebase
 
+    rbc = rb --continue
+    rba = rb --abort
+    rbs = rb --skip
+
+    pr = pull --rebase
+
     # save shortcut to ammend commit
     save = commit -a --amend --no-edit
 
