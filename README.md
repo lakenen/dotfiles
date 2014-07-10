@@ -1,4 +1,6 @@
-# Mathias’s dotfiles
+# Cameron's dotfiles
+
+Stolen from https://github.com/mathiasbynens/dotfiles
 
 ## Installation
 
