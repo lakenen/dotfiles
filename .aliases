@@ -148,3 +148,6 @@ alias vr="vh && vs"
 
 # SSH stuff
 alias tunnelvnc="ssh -f -L 5999:127.0.0.1:5900"
+
+# edit dotfiles
+alias dotfiles="subl -n ${DOTFILES_LOCATION}"
