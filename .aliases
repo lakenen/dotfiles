@@ -17,7 +17,7 @@ alias j="jobs"
 alias v="vim"
 alias m="mate ."
 alias ss="subl"
-alias s="subl ."
+alias s="subl -n ."
 alias oo="open"
 alias o="open ."
 alias md="mkdir"
@@ -142,10 +142,9 @@ alias devchrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\
 
 # Vagrant stuff
 alias vu="vagrant up"
-alias vs="vagrant ssh"
+alias vs="vu && vagrant ssh"
 alias vh="vagrant halt"
 alias vr="vh && vs"
-
 
 # SSH stuff
 alias tunnelvnc="ssh -f -L 5999:127.0.0.1:5900"
