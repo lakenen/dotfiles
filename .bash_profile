@@ -53,3 +53,7 @@ source ~/.git-completion.sh
 
 # Local modifications
 [ -r ~/.bash_local ] && source ~/.bash_local
+
+# change ctrl+w behavior
+stty werase undef
+bind '"\C-w":backward-kill-word'
