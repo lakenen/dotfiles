@@ -51,9 +51,9 @@ source ~/.git-completion.sh
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Local modifications
-[ -r ~/.bash_local ] && source ~/.bash_local
-
 # change ctrl+w behavior
 stty werase undef
 bind '"\C-w":backward-kill-word'
+
+# Local modifications
+[ -r ~/.bash_local ] && source ~/.bash_local

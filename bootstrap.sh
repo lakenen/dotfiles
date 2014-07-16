@@ -16,5 +16,3 @@ fi
 unset doIt
 ./install-deps.sh
 source ~/.bash_profile
-
-export DOTFILES_LOCATION=`pwd`
