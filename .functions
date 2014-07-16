@@ -144,3 +144,13 @@ function unquarantine() {
 		xattr -r -d "$attribute" "$@"
 	done
 }
+
+# create a tmp folder with the given name
+function tmp() {
+    cd ~/tmp
+
+    if [ "$#" -ne 0 ]; then
+        mkdir -p "$1"
+        cd "$1"
+    fi
+}
