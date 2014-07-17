@@ -150,4 +150,4 @@ alias vr="vh && vs"
 alias tunnelvnc="ssh -f -L 5999:127.0.0.1:5900"
 
 # edit dotfiles
-alias dotfiles="subl -n $DOTFILES_LOCATION"
+alias dotfiles="[ -r ~/.bash_local ] && . ~/.bash_local && subl -n $DOTFILES_LOCATION"
