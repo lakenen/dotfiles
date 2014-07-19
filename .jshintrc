@@ -3,6 +3,5 @@
   "laxcomma": true,
   "node": true,
   "browser": true,
-  "laxbreak": true,
-  "globalstrict": true
+  "laxbreak": true
 }
