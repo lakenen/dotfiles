@@ -56,4 +56,4 @@ stty werase undef
 bind '"\C-w":backward-kill-word'
 
 # Local modifications
-[ -r ~/.bash_local ] && source ~/.bash_local
+[ -f ~/.bash_local ] && source ~/.bash_local
