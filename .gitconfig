@@ -58,6 +58,9 @@
 
     pr = pull --rebase
 
+    # stash including untracked files, but keep staged changes
+    suk = stash -u -k
+
     # save shortcut to ammend commit
     save = commit -a --amend --no-edit
 
