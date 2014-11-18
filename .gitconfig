@@ -55,6 +55,7 @@
     rbc = rebase --continue
     rba = rebase --abort
     rbs = rebase --skip
+    rbi = rebase -i
 
     pr = pull --rebase
 
