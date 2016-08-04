@@ -58,6 +58,8 @@
     rbi = rebase -i
 
     pr = pull --rebase
+    prm = pull --rebase origin master
+    prom = pull --rebase origin master
 
     # stash including untracked files, but keep staged changes
     suk = stash -u -k
