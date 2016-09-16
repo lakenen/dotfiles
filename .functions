@@ -154,3 +154,31 @@ function tmp() {
         cd "$1"
     fi
 }
+
+function random_mac() {
+  openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'
+}
+
+function find_mac() {
+  ifconfig en0 | egrep -o "([0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}"
+}
+
+function set_mac() {
+  if [ -n "$1" ]; then
+    echo "Changing MAC address to $1"
+    sudo ifconfig en0 ether "$1"
+  fi
+}
+
+function spoof_mac() {
+  if ! [ -n "$INITIAL_MACADDR" ]; then
+    export INITIAL_MACADDR=`find_mac`
+  fi
+  set_mac "`random_mac`"
+}
+
+function restore_mac() {
+  if [ -n "$INITIAL_MACADDR" ]; then
+    set_mac "${INITIAL_MACADDR}"
+  fi
+}
