@@ -57,6 +57,8 @@
     rbs = rebase --skip
     rbi = rebase -i
 
+    pom = push origin master
+
     pr = pull --rebase
     prm = pull --rebase origin master
     prom = pull --rebase origin master
