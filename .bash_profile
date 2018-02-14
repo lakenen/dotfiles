@@ -57,3 +57,5 @@ bind '"\C-w":backward-kill-word'
 
 # Local modifications
 [ -f ~/.bash_local ] && source ~/.bash_local
+
+ssh-add -K ~/.ssh/id_rsa
