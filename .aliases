@@ -16,8 +16,8 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias m="mate ."
-alias ss="subl"
-alias s="subl -n ."
+alias ss="code"
+alias s="code -n ."
 alias oo="open"
 alias o="open ."
 alias md="mkdir"
@@ -151,10 +151,13 @@ alias vr="vh && vs"
 alias tunnelvnc="ssh -f -L 5999:127.0.0.1:5900"
 
 # edit dotfiles
-alias dotfiles='[ -r ~/.bash_local ] && . ~/.bash_local && cd `echo $DOTFILES_LOCATION` && subl -n .'
+alias dotfiles='[ -r ~/.bash_local ] && . ~/.bash_local && cd `echo $DOTFILES_LOCATION` && s'
 
 # source bashrc
 alias ,=". ~/.bashrc"
 
 # fix ip routing tables
 alias fixip="sudo ifconfig en0 down && sudo route delete 127.0.0.1 127.0.0.1 && sudo route -n flush && sudo ifconfig en0 up"
+
+# django tests
+alias runtests = "python manage.py test --keepdb --parallel 3"
