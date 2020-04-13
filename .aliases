@@ -23,13 +23,8 @@ alias o="open ."
 alias md="mkdir"
 
 # Git shortcuts
-alias gco='git co'
 alias gci='git ci'
 alias grb='git rb'
-
-# git typos
-alias gti='git'
-alias got='git'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -158,6 +153,3 @@ alias ,=". ~/.bashrc"
 
 # fix ip routing tables
 alias fixip="sudo ifconfig en0 down && sudo route delete 127.0.0.1 127.0.0.1 && sudo route -n flush && sudo ifconfig en0 up"
-
-# django tests
-alias runtests = "python manage.py test --keepdb --parallel 3"

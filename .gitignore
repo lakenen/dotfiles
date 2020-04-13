@@ -15,3 +15,6 @@ Thumbs.db
 
 # Extras (me-specific config)
 .bash_local
+
+node_modules
+package-lock.json

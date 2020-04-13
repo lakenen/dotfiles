@@ -143,9 +143,9 @@ nmap <silent> <leader>ul :t.\|s/./=/g\|set nohls<cr>
 set synmaxcol=2048
 
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
-set nobackup
-set nowb
-set noswapfile
+" set nobackup
+" set nowb
+" set noswapfile
 
 set ai "Auto indent
 set si "Smart indent

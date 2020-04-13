@@ -1705,7 +1705,7 @@ _git_tag ()
 _git ()
 {
 	local i c=1 command __git_dir
-	
+
 	while [ $c -lt $COMP_CWORD ]; do
 		i="${COMP_WORDS[c]}"
 		case "$i" in
@@ -1819,6 +1819,14 @@ complete -o bashdefault -o default -o nospace -F _git_rebase grb 2>/dev/null \
 	|| complete -o default -o nospace -F _git_rebase grb
 complete -o bashdefault -o default -o nospace -F _gitk gitk 2>/dev/null \
 	|| complete -o default -o nospace -F _gitk gitk
+
+# aliases and completion for git typos
+for _alias in {gti,gto,gtu,got,gut}; do
+	alias $_alias='git'
+	complete -o bashdefault -o default -o nospace -F _git $_alias 2>/dev/null \
+		|| complete -o default -o nospace -F _git $_alias
+done
+unset _alias
 
 # The following are necessary only for Cygwin, and only are needed
 # when the user has tab-completed the executable name and consequently
